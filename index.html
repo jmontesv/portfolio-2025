@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javier Montes - Software Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="modal-close">&times;</span>
+            <div class="content">
+                <img id="modal-image">
+                <div>
+                    <h2 id="modal-title"></h2>
+                    <p id="modal-description"></p>
+                    <div class="links">
+                        <a id="modal-demo" target="_blank">Demo</a>
+                        <a id="modal-code" target="_blank"><img src="img/github.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#home" class="logo">JM</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Javier Montes</h1>
+        <p class="subtitle">Software Developer</p>
+        <p>Passionate about creating innovative web solutions with modern technologies. One year of experience building dynamic applications with React, Python, and Flask.</p>
+        <a href="#projects" class="cta-button">View My Work</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="section-header">
+            <h2>About Me</h2>
+        </div>
+        <div class="card">
+            <p>I'm a dedicated software developer with one year of professional experience in web development. My journey began with a passion for problem-solving and has evolved into expertise in full-stack development. I specialize in creating responsive, user-friendly applications using modern technologies like React for frontend development and Python with Flask for backend solutions.</p>
+            <br>
+            <p>I'm constantly learning and staying up-to-date with the latest industry trends and best practices. My goal is to build applications that not only function flawlessly but also provide exceptional user experiences.</p>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="section-header">
+            <h2>Experience</h2>
+        </div>
+        <div class="card">
+            <div class="experience-item">
+                <h3>Software Developer</h3>
+                <div class="duration">2022 - Present</div>
+                <p>During this period, I worked as a freelance developer, combining one-off assignments with personal projects to maintain and expand my full-stack skills.</p>
+            </div>
+            <div class="experience-item">
+                <h3>Junior Frontend Developer</h3>
+                <div class="duration">2021</div>
+                <p>I worked on migrating a web application from Angular JS to React. I also maintained and fixed bugs on a mobile app built with React Native. The technologies used were React, React Native, and TypeScript.</p>
+            </div>
+            <div class="experience-item">
+                <h3>Junior Frontend Developer</h3>
+                <div class="duration">2018 - 2019</div>
+                <p>The Beginning. I learned Angular from the ground up, alongside a more experienced colleague who had been familiar with Angular since its first version, and from whom I fully absorbed its potential, working with Angular and Git. At this point, I discovered the full power of JavaScript and its ecosystem. 
+                    I gained a deep understanding of the framework and knew this was my path.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="section-header">
+            <h2>Featured Projects</h2>
+        </div>
+        <div class="projects-grid">
+            <div 
+                class="project-card"
+                data-title="Padel reservation application"
+                data-image="reservas.PNG"
+                data-description="A simple app where you can create court reservations with different schedules. It has allowed me to strengthen my knowledge of both the frontend and backend."
+                data-code="https://github.com/jmontesv/frontend-reservas-padel"
+            >
+                <div class="project-image">
+                    <img src="img/reservas.PNG">
+                </div>
+                <div class="project-content">
+                    <h3>Padel reservation application</h3>
+                    <p>A simple app where you can create court reservations with different schedules. It has allowed me to strengthen my knowledge of both the frontend and backend.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">ShadCN</span>
+                        <span class="tech-tag">Firebase</span>
+
+                    </div>
+                </div>
+            </div>
+            <div 
+                class="project-card"
+                data-title="Products table"
+                data-image="productos.PNG"
+                data-description="Product table with pagination and price and name filters. I was able to practice using useEffect, events, components, and API consumption on the frontend. On the backend, I used sorting functions, lambda functions, and endpoint creation with Flask."
+                data-code="https://github.com/jmontesv"
+            >
+                <div class="project-image">
+                    <img src="img/productos.PNG">   
+                </div>
+                <div class="project-content">
+                    <h3>Products table</h3>
+                    <p>Product table with pagination and price and name filters. I was able to practice using useEffect, events, components, and API consumption on the frontend. On the backend, I used sorting functions, lambda functions, and endpoint creation with Flask.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">CSS</span>
+                    </div>
+                </div>
+            </div>
+            <div 
+                class="project-card"
+                data-title="Todo application"
+                data-image="todo-app.PNG"
+                data-description="An app for storing to-do items. Tasks have an importance level. You can add, edit, and delete tasks. This app has allowed me to practice using useState, useReducer, and other tools within React."
+                data-code="https://github.com/jmontesv/todo-react-app"
+                data-demo="https://todo-react-app-lovat-two.vercel.app/"   
+            >
+                <div class="project-image">
+                    <img src="img/todo-app.png"> 
+                </div>
+                <div class="project-content">
+                    <h3>Todo application</h3>
+                    <p>An app for storing to-do items. Tasks have an importance level. You can add, edit, and delete tasks. This app has allowed me to practice using useState, useReducer, and other tools within React.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="section-header">
+            <h2>Technical Skills</h2>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <h4>HTML</h4>
+                <p>Semantic markup and accessibility</p>
+            </div>
+            <div class="skill-item">
+                <h4>CSS</h4>
+                <p>Responsive design and animations</p>
+            </div>
+            <div class="skill-item">
+                <h4>JavaScript</h4>
+                <p>ES6+ and modern features</p>
+            </div>
+            <div class="skill-item">
+                <h4>React</h4>
+                <p>Component-based development</p>
+            </div>
+            <div class="skill-item">
+                <h4>Python</h4>
+                <p>Backend development and scripting</p>
+            </div>
+            <div class="skill-item">
+                <h4>Flask</h4>
+                <p>Web framework and API development</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="section-header">
+            <h2>Get In Touch</h2>
+        </div>
+        <div class="contact-info">
+            <div class="contact-item">
+                <h4>📧 Email</h4>
+                <a href="mailto:javiermontes97@gmail.com">javiermontes97@gmail.com</a>
+            </div>
+            <div class="contact-item">
+                <h4>💼 LinkedIn</h4>
+                <a href="https://linkedin.com/in/javier-montes-villamarin" target="_blank">linkedin.com/in/javier-montes-villamarin</a>
+            </div>
+            <div class="contact-item">
+                <h4>🐙 GitHub</h4>
+                <a href="https://github.com/jmontesv" target="_blank">github.com/jmontesv</a>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
