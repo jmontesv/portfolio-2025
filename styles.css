@@ -29,7 +29,9 @@
 
  .modal img {
      width: 60%;
-     height: auto;
+     display: block;
+     max-height: 300px;
+     object-fit: contain;
  }
 
  .modal-content {
@@ -493,6 +495,15 @@
 
      .skills-grid {
          grid-template-columns: repeat(2, 1fr);
+     }
+
+     .modal-content .content {
+        flex-direction: column;
+        row-gap: 20px;
+     }
+
+     #modal-image {
+        width: 100%;
      }
  }
 
